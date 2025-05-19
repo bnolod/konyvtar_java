@@ -10,12 +10,12 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-public class HelloApplication extends Application {
+public class BookApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        FXMLLoader fxmlLoader = new FXMLLoader(BookApplication.class.getResource("hello-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 720, 500);
+        stage.setTitle("Book");
         stage.setScene(scene);
         stage.show();
     }
